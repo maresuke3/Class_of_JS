@@ -1,0 +1,53 @@
+
+body{
+  margin: 10px;
+}
+
+.Title{
+  font-size: 72px;
+  font-weight: bold;
+  text-align: right;
+  letter-spacing: -8px;
+  color: #f0f0f0;
+  margin: -40px 0px;
+}
+
+.Logo {
+  font-size: 120pt;
+  font-family: "Holland";
+  margin: 10% 25% 10% 25%;
+}
+
+.contentstitle {
+  font-family: "Holland";
+  font-size: 40pt;
+  margin: 0;
+}
+ul {
+  font-family: "Holland";
+  font-size: 18pt;
+}
+
+ul.study_contents {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  /* padding-bottom: 5%; */
+}
+ul.study_contents li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background-color: white;
+  border: none;
+}
+ul.study_contents li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  bottom: 7%;
+  position: absolute;
+}
