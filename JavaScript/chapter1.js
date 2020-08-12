@@ -1,10 +1,10 @@
-// 変数   (var)
+// 変数   (var or let)
 var m = "Good morning!";
 let a = ["Good afternoon!", "Good evening!"];　// 変数の中に配列を入れることも可能です。
 let r = "Hello";
 var e = {institute: "金沢工業大学", major: "情報フロンティア学部", department: "メディア情報学科", class: 2};
 
-// 定数 (const or let)
+// 定数 (const)
 const myname = "mare";
 
 // 値を取り出す
@@ -33,11 +33,27 @@ if (numA%2 == 0) {
 
 
 // 繰り返し (for文、while文、do-while文)
-for (var numB = 0; numB<10; numB++) {
-  console.log(numB)
+// 0~9までを表示させる
+console.log("0~10までを表示させる");
+for (var numB = 0; numB<=10; numB++) {
+  console.log(numB);
 }
 
+// 0~10の範囲で偶数のみ表示させる
+console.log("0~10の範囲で偶数のみ表示させる");
 var numC = 0;
-while (numC < 10) {
-  
+while (numC <= 10) {
+  console.log(numC);
+  numC = numC + 2;
 }
+
+// 0~10までの値で初項1、公比3の等比数列を表示
+console.log("初項1、公比3の等比数列を表示")
+var numD = 1;
+do {
+  console.log(numD);
+  numD = numD * 3;
+} while (numD <= 10);
+
+
+// 関数を作成してみる　(function)
