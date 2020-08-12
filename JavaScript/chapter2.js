@@ -17,6 +17,7 @@ console.log(date.toLocaleString());
 
   alert(str);
 
-  
+
   // var data = navigator.platform + "\n"
   // + navigator.userAgent + "\n";
+  
