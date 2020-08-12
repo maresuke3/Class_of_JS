@@ -57,3 +57,22 @@ do {
 
 
 // 関数を作成してみる　(function)
+// 試しに簡単たな足し算あたりの関数を作ってみる
+console.log("関数を作って遊んでみる")
+console.log("手始めに数字で叫びます！")
+function Addition (a,b) {
+  var c = a + b;
+  return c;
+}
+var d = Addition(300,15);
+console.log(d + "~");
+
+// 引数/戻り値がない場合
+console.log("引数/戻り値を指定しなかったらどうなるの？")
+function aisatsu(){
+  console.log(a[0]);  
+  // 挨拶は最初に変数を学んだときのやつを利用します。ただし指定できるのpublicもしくは関数自体で宣言するlocalの変数のみです！別の関数で宣言した変数は利用できません。
+}
+aisatsu();
+/* こんな感じで引数/戻り値がなければ関数名だけを記述するだけで関数が実行されます */
+
