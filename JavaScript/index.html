@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="main.css">
-  <!-- <script src="chapter1.js"></script> -->
+  <script src="chapter1.js"></script>
   <title>JavaScript</title>
 </head>
 
@@ -13,13 +13,13 @@
     <h1>基本文法</h1>
     <ul>
       <li><h3>変数</h3></li>
-        <p>javascriptでは変数を扱うことができます。変数を指定するときは<strong>var</strong>を用いて変数を指定します。<br />
-          もちろん変数なので変数の中の値はプログラム内で変更することができます。</p>
+        <p>javascriptでは変数を扱うことができます。変数を指定するときは<strong>var</strong>と<strong>let</strong>を用いて変数を指定します。<br />
+          もちろん変数なので変数の中の値はプログラム内で変更することができます。今回はとりあえずvarを使っていきます。そもそものこの二つのの変数の違いはなんなのかについてはのちおほど説明しようと思います。<br />
+          letはいろいろめんどくさい。慣れればこれはすごい機能!と言うかbarよりletの方が推奨されるらしい...</p>
       <li><h3>定数</h3></li>
         <p>変数とは違いこの定数は一度設定したらプログラム内で変更することはできません。<br />
           文字通り定められた不変の値というわけです。<br />
-          ちなみに変数はJavaScriptでは<strong>const</strong>と<strong>let</strong>を用いて指定することができます<br />
-          今回はconstを使用して行きます。letはいろいろめんどくさい。慣れればこれはすごい機能</p>
+          ちなみに変数はJavaScriptでは<strong>const</strong>を用いて指定することができます<br /></p>
       <li><h3>値の出力</h3></li>
         <p>JavaScriptでは変数や定数、配列などに様々な情報やプログラムの発火装置を埋め込みます。<br />
           それらを呼び出すときにはいくつか方法があります。最も簡単で重要なものが<strong>console.log</strong>です。<br />
@@ -44,18 +44,6 @@
     <p>あらかじめせってしておいた変数と定数があるのでそれを用いて少し勉強してみましょう</p>
     <h2>では今度は自分たちでプロジェクトを作ってweb上で動く何かを作ってみましょう！</h2>
     <a href="./chapter2.html">次のコンテンツへ...</a>
-    <script>
-      // 変数
-      var m = "Good morning!";
-      var a = ["Good afternoon!", "Good evening!"];　// 変数の中に配列を入れることも可能です。
-      var r = "Hello";
-      var e = {institute: "金沢工業大学", major: "情報フロンティア学部", department: "メディア情報学科", class: 2};
-
-      // 定数
-      const myname = "mare";
-
-      // 値を取り出す
-    </script>
   </div>
 </body>
 
