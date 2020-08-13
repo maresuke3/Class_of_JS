@@ -4,7 +4,7 @@ let a = ["Good afternoon!", "Good evening!"];　// 変数の中に配列を入�
 let r = "Hello";
 var e = {institute: "金沢工業大学", major: "情報フロンティア学部", department: "メディア情報学科", class: 2};
 
-// 定数 (const)
+// 定数 (const)　今回に限って本来constも変数と呼ばれるものですが、説明がしやすいので定数と表記してます
 const myname = "mare";
 
 // 値を取り出す
