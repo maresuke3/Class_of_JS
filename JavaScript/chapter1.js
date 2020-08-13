@@ -18,6 +18,7 @@ console.log(myname);
 console.log("varの場合")
 function func01() {
   var hoge = 100;
+  console.log(hoge);
   if (true) {
     var hoge = 200;
     console.log(hoge);  // ここでは200と表示してほしい
@@ -28,7 +29,7 @@ func01();   // 当初予定していた出力結果にならない
 // letの場合
 console.log("letの場合");
 function func02() {
-  var fuga = 100;
+  let fuga = 100;
   if (true) {
     let fuga = 200;
     console.log(fuga);  // ここでは200と表示してほしい
