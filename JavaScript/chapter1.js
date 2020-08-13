@@ -13,6 +13,29 @@ console.log(a[1]);
 console.log(e.institute);
 console.log(myname);
 
+// ちょっとここでletが推奨される理由を...
+// varの場合
+console.log("varの場合")
+function func01() {
+  var hoge = 100;
+  if (true) {
+    var hoge = 200;
+    console.log(hoge);  // ここでは200と表示してほしい
+  }
+  console.log(hoge);    // ここでは100と表示してほしい
+}
+func01();   // 当初予定していた出力結果にならない
+// letの場合
+console.log("letの場合");
+function func02() {
+  var fuga = 100;
+  if (true) {
+    let fuga = 200;
+    console.log(fuga);  // ここでは200と表示してほしい
+  }
+  console.log(fuga);  // ここでは100と表示してほしい
+}
+func02();   // 予定通りの出力になった！
 
 // 分岐 (if文)
 var numA = 1;
