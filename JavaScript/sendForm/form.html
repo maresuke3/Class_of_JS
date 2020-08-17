@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./main.css">
+  <script src="./sample.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h1>サンプルアプリ(提出フォームを作ってみる)</h1>
+  <hr />
+  <h2>会員登録フォーム</h2>
+  <form class="memberForm">
+    <table>
+      <tbody>
+        <tr>
+          <th>Your name</th>
+          <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+          <th>Login ID</th>
+          <td><input type="password" id="pas"></td>
+        </tr>
+        <tr>
+          <th>e-mail</th>
+          <td><input type="email" id="mail"></tr>
+        </tr>
+        <tr>
+          <th>Your age</th>
+          <td><input type="number" id="year"></td>
+        </tr>
+        <tr>
+          <th>住所</th>
+          <td>
+            <select id="home">
+              <option value="">選択してください</option>
+              <option value="0">北海道</option>
+              <option value="1">東北地方</option>
+              <option value="2">関東地方</option>
+              <option value="3">中部地方</option>
+              <option value="4">近畿地方</option>
+              <option value="5">中国地方</option>
+              <option value="6">四国地方</option>
+              <option value="7">九州・沖縄地方</option>
+            </select><br />
+            <select id="pref">
+              <option value="">地方を選択してください</option>
+            </select><br />
+            <input type="text" id="address" placeholder="市区町村-番地"><br />
+            <input type="text" id="address2" placeholder="賃貸部屋番号">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <input type="button" id="button" value="確定" onclick="onSave();">
+  </form>
+</body>
+</html>
