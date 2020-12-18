@@ -15,11 +15,15 @@
       <tbody>
         <tr>
           <th>Your name</th>
-          <td><input type="text" id="name"></td>
+          <td><input type="text"required id="name"></td>
         </tr>
         <tr>
           <th>Login ID</th>
-          <td><input type="password" id="pas"></td>
+          <td><input type="text" id="ID"></td>
+        </tr>
+        <tr>
+          <th>Password</th>
+          <td><input type="password" id="pas" value="" onblur="checkAmount(this)"></td>
         </tr>
         <tr>
           <th>e-mail</th>
@@ -52,7 +56,10 @@
         </tr>
       </tbody>
     </table>
-    <input type="button" id="button" value="確定" onclick="onSave();">
+    <input type="submit" id="button" value="確定" onclick="onSave();">
   </form>
 </body>
+<footer>
+  <p><a href="../index.html">ホームに戻って復習する</a></p>
+</footer>
 </html>

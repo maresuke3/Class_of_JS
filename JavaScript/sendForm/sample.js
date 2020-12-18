@@ -31,12 +31,14 @@ window.addEventListener("DOMContentLoaded", function() {
   });
 })
 
+// save data whitch is your personal data
 function onSave(obj) {
 
   // reading element of form
   const name = document.getElementById('name').value;
   const password = document.getElementById('pas').value;
   const mail = document.getElementById('mail').value;
+  const pas = document.getElementById('pas').value;
   const age = document.getElementById('year').value;
   const address1 = document.getElementById('home').value;
   const address2 = document.getElementById('pref').value;
@@ -53,6 +55,8 @@ function onSave(obj) {
   console.log(storage.hoge);
   storage.hoge = mail;
   console.log(storage.hoge);
+  storage.hoge = pas;
+  console.log(storage.hoge);
   storage.hoge = age;
   console.log(storage.hoge);
   storage.hoge = address1;
@@ -68,4 +72,12 @@ function onSave(obj) {
   window.alert("登録しました")
   // リロード
   location.reload();
+}
+
+// check element
+function checkAmount(obj) {
+  let str = obj.value;
+  if (str.length < 8) {
+    window.alert("パスワードは８文字以上で作成してください。")
+  }
 }
