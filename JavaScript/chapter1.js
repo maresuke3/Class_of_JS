@@ -39,7 +39,7 @@ function func02() {
 func02();   // 予定通りの出力になった！
 
 // 分岐 (if文)
-var numA = 1;
+var numA = 3;
 if (numA == 1) {
   console.log("変数numAの値は1です")
 }else if (numA == 2) {
